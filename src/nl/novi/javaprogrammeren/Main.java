@@ -1,5 +1,6 @@
 package nl.novi.javaprogrammeren;
 
+import nl.novi.javaprogrammeren.overerving.ApolloRocket;
 import nl.novi.javaprogrammeren.overerving.Rocket;
 
 public class Main {
@@ -15,10 +16,11 @@ public class Main {
 
     public static void main(String[] args) {
         Rocket genericRocket = new Rocket(100);
+        ApolloRocket ar = new ApolloRocket(100, 2);
 
         genericRocket.fly(10);
         System.out.println(genericRocket.toString());
-
+        System.out.println(ar.toString());
 
     }
 }
